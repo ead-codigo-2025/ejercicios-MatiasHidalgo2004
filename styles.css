@@ -19,7 +19,7 @@ img { max-width: 100%; }
 
 /* Botón*/
 .boton {
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
