@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 
 img { max-width: 100%; }
 
-/* Botón genérico */
+/* Botón*/
 .boton {
   display: inline-block;
   padding: 10px 20px;
@@ -29,18 +29,18 @@ img { max-width: 100%; }
 
 /* Página 1: portada */
 body.portada {
-  background: #edb230; /* amarillo cálido */
-  color: #784F41; /* café */
+  background: #edb230; 
+  color: #784F41; 
 }
 body.portada .boton {
-  background: #ffd151; /* amarillo claro */
+  background: #ffd151; 
   color: #784F41;
 }
 
 /* Página 2: info */
 body.info {
-  background: #9ecbff; /* azul cielo suave */
-  color: #3e2a78; /* morado oscuro */
+  background: #9ecbff; 
+  color: #3e2a78; 
 }
 body.info .boton {
   background: #ffd151;
@@ -49,15 +49,15 @@ body.info .boton {
 
 /* Página 3: sorpresa */
 body.sorpresa {
-  background: #ff6f61; /* rojo coral */
-  color: #fff5e6; /* blanco cálido */
+  background: #ff6f61; 
+  color: #fff5e6; 
 }
 body.sorpresa .boton {
   background: #ffd151;
   color: #ff6f61;
 }
 
-/* Info-box y estilos originales */
+/* Info-box*/
 .info-box {
   background: #ffd151;
   padding: 15px 20px;
