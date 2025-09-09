@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+img { max-width: 100%; }
+
+/* Botón*/
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Página 1: portada */
+body.portada {
+  background: #edb230; 
+  color: #784F41; 
+}
+body.portada .boton {
+  background: #ffd151; 
+  color: #784F41;
+}
+
+/* Página 2: info */
+body.info {
+  background: #9ecbff; 
+  color: #3e2a78; 
+}
+body.info .boton {
+  background: #ffd151;
+  color: #3e2a78;
+}
+
+/* Página 3: sorpresa */
+body.sorpresa {
+  background: #ff6f61; 
+  color: #fff5e6; 
+}
+body.sorpresa .boton {
+  background: #ffd151;
+  color: #ff6f61;
+}
+
+/* Info-box*/
+.info-box {
+  background: #ffd151;
+  padding: 15px 20px;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+}
+.profile-link-box {
+  position: absolute;
+  top: 15px; right: 20px;
+  background: #ffdda1;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.profile-link-box a {
+  color: #a882dd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .9rem;
+}
+.info-box ul {
+  list-style: disc outside;
+  margin: 0;
+  padding: 0;
+}
+.info-box li {
+  display: list-item grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: .5em;
+  align-items: start;
+  margin-bottom: .5em;
+  line-height: 1.4;
+}
+.info-box .label { font-weight: bold; }
+.info-box .correo .value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8em;
+}
+.info-box .correo .avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.info-box .correo .value:hover .avatar {
+  opacity: 1;
+}
+a.email {
+  color: #a882dd;
+  text-decoration: none;
+}
