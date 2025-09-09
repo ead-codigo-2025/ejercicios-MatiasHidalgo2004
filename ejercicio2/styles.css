@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ===== Botones ===== */
+.boton {
+  display: inline-block;
+  background: #FFA500;
+  color: #000;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: auto;
+}
+.boton:hover {
+  background: #FFA500;
+}
+
+.intro-texto .boton {
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+}
+
+.deportes-texto .boton {
+  width: fit-content;
+}
+
+/* ===== Línea  ===== */
+.linea-separadora {
+  width: 80px;
+  height: 3px;
+  background-color: #FFA500;
+  margin: 10px 0 20px 0;
+  border-radius: 2px;
+}
+
+/* ===== mitad arriba ===== */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 8%;
+  background-color: #fff;
+}
+
+.intro-texto h1 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.intro-texto p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===== cuadros de servicios ===== */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #F5F5F5;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.titulo-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cuadro {
+  width: 6px;
+  height: 6px;
+  background-color: #01225c;
+  border-radius: 2px;
+}
+
+.card h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ===== mitad de abajo ===== */
+.deportes {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 60px 8%;
+  background-color: #F5F5F5;
+  gap: 40px;
+}
+
+.deportes-texto {
+  flex: 1;
+  background-color: #01225c;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.deportes-texto h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.deportes-texto h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.deportes-texto p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.deportes-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deportes-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+  .deportes {
+    flex-direction: column;
+  }
+  .deportes-texto {
+    order: 2;
+  }
+  .deportes-imagen {
+    order: 1;
+  }
+}
